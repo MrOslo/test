@@ -1,0 +1,75 @@
+*/ Cabeçalho*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#titulo
+{
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    color: #985277;
+    margin-left: 7%;
+}
+#subtitulo
+{
+    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
+    color: #535a9e;
+    margin-left: 10%;
+}
+
+#check
+{
+    display: inline-block;
+}
+*/End Cabeçalho*/
+*/Body*/
+body
+{
+    background-color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #353126;
+    margin-left: 35%;
+    margin-top: 3%;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+input, select, textarea, button
+{
+    font-family: Roboto, sans-serif;
+    font-size: 1em;
+    color: #985277;
+    border-radius: 5px;
+}
+
+.grupo:before, .grupo:after
+{
+    display: table;
+}
+
+.grupo:after
+{
+    clear: both;
+}
+
+.campo
+{
+    margin-bottom: 1em;    
+}
+
+.campo label
+{
+    margin-bottom: 0.3em;
+    color: #783F8E;
+    display: block;
+}
+
+fieldset .grupo .campo
+{
+    float: left;
+    margin-right: 1em; 
+}
+*/End Body*/

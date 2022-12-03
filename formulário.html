@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <!--CABEÇALHO-->
+    <div>
+        <h1 id="titulo"><strong>Cadastro de Alunos</strong></h1>
+            <h2 id="subtitulo">Lisbon School Of Design</h2>
+            <p>Insira as informações:</p>
+    </div>
+        <!--END CABEÇALHO-->
+        <!--FORMULÁRIO-->
+    <form>
+        <fieldset class="grupo">
+            <!--LABEL-->
+            <div class="campo">
+                <label>Nome</label>
+                <input type="text" name="Nome" id="nome" required>
+                <label>Apelido</label>
+                <input type="text" name="Apelido" id="apelido" required>
+            </div>
+        </fieldset>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="Email" id="email" required>
+            </div>
+            <div>
+                <label><strong>Qual Curso deseja?</strong></label>
+                <label>
+                    <input type="radio" name="web-design" value="webdesign">Web Desing
+                </label>
+                <label>
+                    <input type="radio" name="Ui-ux" value="uiux">UI/UX Design
+                </label>
+                <label>
+                    <input type="radio" name="marketing" value="marketing">Marketing
+                </label>
+            </div>
+            <div>
+                <label for="turno">Turno</label>
+                <select id="turno" required>
+                    <option selected disabled value="">ESCOLHA</option>
+                   <option>LABORAL</option>
+                   <option>PÓS-LABORAL</option>
+                   <option>HORÁRIOS ESPECIAIS</option>
+                </select>
+            </div>
+            <!--END LABEL-->
+            <div>
+                <!--CHECKBOX-->
+                <fieldset class="grupo">
+                    <div id="check">
+                <label>Quais São os Seus Conhecimentos?</label>
+                <br><br>
+                <input type="checkbox" id="tech1" name="tch1" value="html">
+                <label for="tech1">HTML</label>
+                <input type="checkbox" id="tech1" name="tch1" value="css">
+                <label for="tech1">CSS</label>
+                <input type="checkbox" id="tech1" name="tch1" value="javascript">
+                <label for="tech1">JAVASCRIPT</label>
+                <input type="checkbox" id="tech1" name="tch1" value="switch">
+                <label for="tech1">SWITCH</label>
+                <input type="checkbox" id="tech1" name="tch1" value="python">
+                <label for="tech1">PYTHON</label>
+                <input type="checkbox" id="tech1" name="tch1" value="C++">
+                <label for="tech1">C++</label>
+                    </div>
+            </div>
+    
+            <!--END CHECKBOX-->
+                </fieldset>
+                <!--TEXTAREA-->
+            <div>
+                <label for="sobre"><strong>Conte Sobre si:</strong></label>
+                <br><br>
+                <textarea rows="5" style="width: 300px;" id="sobre" name="sobre"></textarea>
+            </div>
+            <button type="submit" onsubmit="">Enviar</button>
+    </form>
+                <!--END TEXTAREA-->
+    <!--ENDFORMULÁRIO-->
+</body>
+<!--ENDBODY-->
+</html>
